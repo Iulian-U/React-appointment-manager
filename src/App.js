@@ -1,8 +1,8 @@
 import "./style/css/reset.css";
 import "./style/css/App.css";
 import React from "react";
-import Header from "./components/header";
-import Appointments from "./components/appointments";
+import Header from "./components/Header";
+import Appointments from "./components/Appointments";
 
 function App() {
   return (
