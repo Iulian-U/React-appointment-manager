@@ -1,7 +1,7 @@
 import "../style/css/modal.css";
 import React from "react";
 
-export default function Modal({ title, handleClose }) {
+export default function Modal({ title, content, handleClose }) {
   return (
     <div className="modal_backdrop">
       <div className="modal">
@@ -12,7 +12,7 @@ export default function Modal({ title, handleClose }) {
           </button>
         </div>
         <hr />
-        <div className="modal_content"></div>
+        <div className="modal_content">{content}</div>
       </div>
     </div>
   );

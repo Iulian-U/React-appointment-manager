@@ -1,0 +1,115 @@
+/* --------------------------------- MIXINS --------------------------------- */
+/* -------------------------------- VARIABLES ------------------------------- */
+/* ---------------------------- COMPONENT STYLING --------------------------- */
+.form_container .title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.form_container .title_container span {
+  margin-bottom: 0.5em;
+}
+
+.form_container .title_container input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  height: 2em;
+}
+
+.form_container .title_container ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .title_container :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .title_container ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .title_container ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .location_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.form_container .location_container span {
+  margin-bottom: 0.5em;
+}
+
+.form_container .location_container input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  height: 2em;
+}
+
+.form_container .location_container ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .location_container :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .location_container ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+
+.form_container .location_container ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  /* Firefox */
+  padding-left: 0.5em;
+}
+/*# sourceMappingURL=appointments_form.css.map */

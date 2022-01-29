@@ -1,0 +1,57 @@
+/* --------------------------------- MIXINS --------------------------------- */
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin custom_input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  height: 2em;
+}
+
+@mixin custom_placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1; /* Firefox */
+  padding-left: 0.5em;
+}
+/* -------------------------------- VARIABLES ------------------------------- */
+//COLORS
+$white: #fcfcfc;
+/* ---------------------------- COMPONENT STYLING --------------------------- */
+.form_container {
+  .title_container {
+    @include flex_column;
+    margin-bottom: 1em;
+    span {
+      margin-bottom: 0.5em;
+    }
+    input {
+      @include custom_input;
+    }
+    ::placeholder {
+      @include custom_placeholder;
+    }
+  }
+  .location_container {
+    @include flex_column;
+    margin-bottom: 1em;
+    span {
+      margin-bottom: 0.5em;
+    }
+    input {
+      @include custom_input;
+    }
+    ::placeholder {
+      @include custom_placeholder;
+    }
+  }
+}

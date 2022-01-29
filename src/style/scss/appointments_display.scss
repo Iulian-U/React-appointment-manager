@@ -11,7 +11,7 @@ $white: #fcfcfc;
 /* ---------------------------- COMPONENT STYLING --------------------------- */
 
 .appointments_component_container {
-  @include flex_row;
+  @include flex_column;
   margin-top: 1.5em;
   width: 80%;
   background-color: $white;
