@@ -1,5 +1,5 @@
 /* --------------------------------- MIXINS --------------------------------- */
-@mixin flex_row {
+@mixin flex_column {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,6 @@ $white: #fcfcfc;
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
     font-size: 1em;
     font-weight: 600;
     line-height: 16px;
