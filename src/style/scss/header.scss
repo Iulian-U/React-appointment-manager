@@ -1,0 +1,70 @@
+/* -------------------------------- MIXINS ------------------------------- */
+@mixin background_color {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------- VARIABLES ------------------------------- */
+
+//COLORS
+$white: #fcfcfc;
+
+//FONT WEIGHT
+$light: 300;
+$medium: 400;
+
+/* ---------------------------- COMPONENT STYLING --------------------------- */
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .header {
+    @include background_color;
+    @include flex_column;
+    width: 100%;
+    height: 12rem;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    overflow-y: auto;
+  }
+
+  .header h1 {
+    color: $white;
+    font-size: 3.5rem;
+    font-weight: $medium;
+  }
+
+  .header h3 {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: $light;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .header {
+    @include background_color;
+    @include flex_column;
+    width: 100%;
+    height: 20vh;
+  }
+
+  .header h1 {
+    color: $white;
+    font-size: 8vw;
+    font-weight: $medium;
+  }
+
+  .header h3 {
+    color: $white;
+    font-size: 4vw;
+    font-weight: $light;
+  }
+}
