@@ -18,6 +18,7 @@ export default function Appointments() {
     setEvents((prevEvents) => {
       return [...prevEvents, event];
     });
+    setShowModal(false);
   };
 
   const handleClick = (id) => {

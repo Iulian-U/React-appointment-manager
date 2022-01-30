@@ -90,9 +90,9 @@
   .appointments_card_container {
     overflow-y: auto;
     width: 100%;
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: 20em;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
