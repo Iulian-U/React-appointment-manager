@@ -12,10 +12,13 @@ export default function Appointments() {
   };
 
   //APPOINTMENTS LIST
-  const [events, setEvents] = useState([
-    { title: "Dentist teeth check", id: 1 },
-    { title: "Mechanic brake check", id: 2 },
-  ]);
+  const [events, setEvents] = useState([]);
+
+  const addEvent = (event) => {
+    setEvents((prevEvents) => {
+      return [...prevEvents, event];
+    });
+  };
 
   const handleClick = (id) => {
     setEvents((prevEvents) => {
@@ -35,7 +38,7 @@ export default function Appointments() {
         <AppointmentsList events={events} handleClick={handleClick} />
       </div>
       {showModal && (
-        <Modal title="Add Appointment" content={<AppointmentsForm />} handleClose={handleClose}>
+        <Modal title="Add Appointment" content={<AppointmentsForm addEvent={addEvent} />} handleClose={handleClose}>
           {" "}
         </Modal>
       )}

@@ -1,0 +1,130 @@
+/* --------------------------------- MIXINS --------------------------------- */
+/* -------------------------------- VARIABLES ------------------------------- */
+/* ---------------------------- COMPONENT STYLING --------------------------- */
+.appointments_card_container {
+  overflow-y: auto;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-columns: 25em 25em 25em;
+      grid-template-columns: 25em 25em 25em;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.appointments_card_container .appointment_card {
+  background-color: #ffffff;
+  border: 1px solid #00000015;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+
+.appointments_card_container .appointment_card .card_content {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.appointments_card_container .appointment_card .card_content .card_title {
+  font-size: 1.5em;
+  font-weight: 600;
+  height: auto;
+  color: #fcae65;
+}
+
+.appointments_card_container .appointment_card .card_content .card_location_container,
+.appointments_card_container .appointment_card .card_content .card_date_container,
+.appointments_card_container .appointment_card .card_content .card_time_container {
+  margin-top: 0.5em;
+}
+
+.appointments_card_container .appointment_card .card_content .card_description_container {
+  margin-top: 2em;
+  height: 8em;
+}
+
+.appointments_card_container .appointment_card .card_content .card_location,
+.appointments_card_container .appointment_card .card_content .card_date,
+.appointments_card_container .appointment_card .card_content .card_time,
+.appointments_card_container .appointment_card .card_content .card_description {
+  font-weight: 500;
+}
+
+.appointments_card_container .appointment_card .card_content .card_btn {
+  background: #fcae65;
+  border: 1px solid #fcae65;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+          box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-transform: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: middle;
+  width: 10em;
+}
+
+.appointments_card_container .appointment_card .card_content .card_btn:hover,
+.appointments_card_container .appointment_card .card_content .card_btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #fab06c;
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .appointments_card_container {
+    overflow-y: auto;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-columns: 20em;
+        grid-template-columns: 20em;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+/*# sourceMappingURL=appointments_list.css.map */
