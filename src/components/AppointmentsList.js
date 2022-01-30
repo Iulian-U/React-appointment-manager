@@ -24,7 +24,7 @@ export default function AppointmentsList({ events, handleClick }) {
               <span className="card_description"> Description:</span> {event.description}
             </span>
             <button className="card_btn" onClick={() => handleClick(event.id)}>
-              delete event
+              Delete Appointment
             </button>
           </div>
         </div>

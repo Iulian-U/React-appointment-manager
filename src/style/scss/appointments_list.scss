@@ -72,7 +72,7 @@
         -webkit-user-select: none;
         touch-action: manipulation;
         vertical-align: middle;
-        width: 10em;
+        width: 12em;
       }
 
       .card_btn:hover,
@@ -94,5 +94,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .appointment_card {
+      width: 95%;
+    }
   }
 }

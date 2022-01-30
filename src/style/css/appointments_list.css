@@ -102,7 +102,7 @@
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   vertical-align: middle;
-  width: 10em;
+  width: 12em;
 }
 
 .appointments_card_container .appointment_card .card_content .card_btn:hover,
@@ -130,6 +130,9 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .appointments_card_container .appointment_card {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=appointments_list.css.map */
