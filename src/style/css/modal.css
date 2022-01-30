@@ -26,7 +26,9 @@
           align-items: center;
   padding: 30px;
   max-width: 680px;
-  margin: 200px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
   background: #fff;
   border-radius: 10px;
 }
@@ -86,5 +88,12 @@
 
 .modal_content {
   width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .modal {
+    margin-top: 0.5em;
+  }
 }
 /*# sourceMappingURL=modal.css.map */
